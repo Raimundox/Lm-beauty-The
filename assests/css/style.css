@@ -5,16 +5,16 @@
     --header-height: 6.25rem;
 
     /*---------------COLLORS -------------------*/
-    --main-color: #f7e6df;
-    --first-color: #75492b;
+    --main-color: #DFC9E8;
+    --first-color: #CCA15F;
     --second-color: #dfd6a7;
     --white-color: #ffffff;
     --black-color: #151515;
 
     /*---------------FONT  AND TYPOGRAPHY-------------------*/
-    --font-cursive: 'Great Vibes', cursive;
+    --font-cursive: 'Montserrat', cursive;
     --body-font: 'Montserrat', sans-serif;
-    --big-font-size: 3rem;
+    --big-font-size: 2.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -61,6 +61,25 @@ ul{
 a{
     text-decoration: none;
 }
+
+/*LOGO */
+.brand {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.brand a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border: none;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -117,14 +136,7 @@ a{
     outline: none;
     cursor: pointer;
     transition: all 400ms ease;
-    
 }
-
-.btn a {
-    color: #ffffff; /* Cor do texto do link */
-    text-decoration: none;
-}
-
 .btn:hover{
     background-color: transparent;
     color: var(--first-color);
@@ -150,7 +162,7 @@ a{
     transition:  all 400ms ease-in-out;
 }
 .btn__outline i{
-    margin-right: var(--mb-1-5);
+    margin-right: 45px;
     font-size: var(--h2-font-size);
     color: var(--white-color);
     z-index: var(--z-tooltip);
@@ -167,7 +179,7 @@ a{
 .l-header{
     width: 100%;
     height: var(--header-height);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -176,7 +188,7 @@ a{
 }
 .navbar{
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
 }
 .nav__toggle{
     font-size: var(--h1-font-size);
@@ -257,8 +269,8 @@ a{
 }
 .hero__content h1{
     font-family: var(--font-cursive);
-    font-size: var(--big-font-size);
-    line-height: calc(var(--big-font-size) + 30px);
+    font-size: calc(var(--big-font-size) - 5px);
+    line-height: calc(var(--big-font-size) + 25px);
     letter-spacing: 0.1em;
     color: var(--first-color);
     margin-bottom: var(--mb-1-5);
@@ -657,15 +669,40 @@ a{
         padding: 0;
     }
     .hero .hero__content h1{
-        font-size: 4rem;
+        font-size: 2.6rem;
     }
     .footer__list{
         grid-template-columns: repeat(4, 1fr);
     }
 }
+@media screen and (min-width: 960px) and (max-width: 1160px) {
+    .hero .hero__content h1{
+        font-size: 2rem;
+        line-height: calc(var(--big-font-size) + 15px);
+    }
+}
+
+@media screen and (max-width: 960px){
+    .hero .hero__content h1{
+        text-align: center;
+        padding: 15px;
+    }
+}
+@media (max-width: 618px){
+    .hero .hero__content h1{
+        font-size: 1.8rem;
+        line-height: calc(var(--big-font-size) + 5px);
+    }
+
+    .hero__content h1 br {
+        display: none; /* Esconde a quebra de linha */
+    }
+}
+
 @media (min-width: 1100px){
     .about__descripion::before{
         height: 150%;
         top: -25%;
     }
 }
+
