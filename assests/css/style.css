@@ -12,8 +12,8 @@
     --black-color: #151515;
 
     /*---------------FONT  AND TYPOGRAPHY-------------------*/
-    --font-cursive: 'Montserrat', cursive;
-    --body-font: 'Montserrat', sans-serif;
+    --font-cursive: 'Cinzel', cursive;
+    --body-font: 'Simonetta', sans-serif;
     --big-font-size: 2.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -80,6 +80,12 @@ a{
     border: none;
 }
 
+.footer__data h1 a img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border: none;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -89,7 +95,7 @@ a{
     flex-wrap: wrap;
 }
 .section{
-    padding: calc(var(--header-height) + 20px) 0;
+    padding: calc(var(--header-height) + 10px) 0;
 }
 .grid{
     display: grid;
@@ -145,7 +151,7 @@ a{
     width: 280px;
     background-color: transparent;
     color: var(--first-color);
-    padding: 5px 10px 5px 0;
+    padding: 5px 17px 5px 0;
     transition: all 400ms ease-in-out;
     position: relative;
 }
@@ -287,7 +293,6 @@ a{
 /* ABOUT */
 .about{
     width: 100%;
-    background-image: url(../img/arabesco-left-bottom.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
     z-index: var(--z_negative);
@@ -330,7 +335,6 @@ a{
 /* SERVICES */
 .services{
     width: 100%;
-    background-image: url(../img/arabesco-left-top.svg);
     background-repeat: no-repeat;
     background-position: top left;
     z-index: var(--z_negative);
@@ -392,7 +396,7 @@ a{
     margin-top: var(--mb-2-5);
 }
 .card{
-    height: 360px;
+    height: 300px;
     background-color: var(--white-color);
     box-shadow: 8px 8px 16px rgba(0,0,0,0.25);
     border-radius: 30px;
@@ -415,6 +419,16 @@ a{
 }
 .card__items{
     margin-bottom: var(--mb-1);
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.price p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color); /* Cor laranja, você pode ajustar conforme o design */
 }
 .item{
     display: flex;
@@ -468,6 +482,8 @@ a{
     margin: var(--mb-05);
     background-color: rgba(255, 255, 255, 0.4);
     filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.2));
+    height: 200px;
+    width: auto;
 }
 .gallery__img img:hover{
     transform: scale(1.1);
@@ -692,6 +708,7 @@ a{
     .hero .hero__content h1{
         font-size: 1.8rem;
         line-height: calc(var(--big-font-size) + 5px);
+        padding: 20px;
     }
 
     .hero__content h1 br {
