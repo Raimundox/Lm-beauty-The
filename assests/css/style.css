@@ -151,7 +151,7 @@ a{
     width: 280px;
     background-color: transparent;
     color: var(--first-color);
-    padding: 5px 17px 5px 0;
+    padding: 5px 25px 5px 0;
     transition: all 400ms ease-in-out;
     position: relative;
 }
@@ -708,7 +708,7 @@ a{
     .hero .hero__content h1{
         font-size: 1.8rem;
         line-height: calc(var(--big-font-size) + 5px);
-        padding: 20px;
+        padding: 13px;
     }
 
     .hero__content h1 br {
