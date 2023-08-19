@@ -119,7 +119,7 @@ a{
 }
 .section__title span{
     font-weight: var(--font-light);
-    font-size: var(--h2-font-size);
+    font-size: 20px;
     line-height: var(--h2-font-size);
     color: var(--black-color);
 }
@@ -151,7 +151,7 @@ a{
     width: 280px;
     background-color: transparent;
     color: var(--first-color);
-    padding: 5px 25px 5px 0;
+    padding: 5px 20px 5px 0;
     transition: all 400ms ease-in-out;
     position: relative;
 }
@@ -313,6 +313,7 @@ a{
 }
 .about__descripion{
     position: relative;
+    text-align: justify;
     padding: 2rem;
 }
 .about__descripion::before{
@@ -355,7 +356,6 @@ a{
 .services__content__descripion .box .inner{
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
-    text-transform: capitalize;
     color: var(--first-color);
     padding: 10px;
     position: relative;
@@ -413,7 +413,7 @@ a{
 }
 .card__title h1{
     font-weight: var(--font-bold);
-    font-size: var(--h1-font-size);
+    font-size: 25px;
     line-height: var(--h1-font-size);
     color: var(--black-color);
 }
@@ -531,9 +531,6 @@ a{
     transition: all 0.8s ease;
     z-index: var(--Z-fixed);
 }
-.testimonials__item:hover .testimonials__img img{
-    transform: translateX(300px) rotate(360deg);
-}
 .testimonials__box{
     position: relative;
     padding: 30px;
@@ -621,6 +618,7 @@ a{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        margin-top: 20px;
         z-index: var(--z-tooltip);
     }
     .about__descripion::before{
@@ -671,8 +669,9 @@ a{
         display: block;
     }
     .hero .hero__img, .hero .hero__content{
+        margin-top: 13%;
         width: 50%;
-        height: 70vh;
+        height: 45vh;
     }
     .hero .hero__img img{
         max-width: 100%;
@@ -706,7 +705,7 @@ a{
 }
 @media (max-width: 618px){
     .hero .hero__content h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         line-height: calc(var(--big-font-size) + 5px);
         padding: 13px;
     }

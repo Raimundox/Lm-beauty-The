@@ -48,3 +48,33 @@ function sendMessage(service) {
     var whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message;
     window.location.href = whatsappLink;
 }
+
+
+//Ver mais fotos
+document.addEventListener("DOMContentLoaded", function() {
+    const galleryImages = document.getElementById("galleryImages");
+    const verMaisBtn = document.getElementById("verMaisBtn");
+    const hiddenImages = Array.from(galleryImages.getElementsByClassName("gallery__img")).slice(8);
+    let imagesVisible = false;
+
+    function toggleHiddenImages() {
+        hiddenImages.forEach(image => {
+            if (!imagesVisible) {
+                image.style.display = "block";
+                verMaisBtn.textContent = "ver menos";
+            } else {
+                image.style.display = "none";
+                verMaisBtn.textContent = "ver mais";
+            }
+        });
+        
+        imagesVisible = !imagesVisible;
+    }
+
+    // Esconder as imagens extras ao carregar a página
+    hiddenImages.forEach(image => {
+        image.style.display = "none";
+    });
+
+    verMaisBtn.addEventListener("click", toggleHiddenImages);
+});
