@@ -313,7 +313,6 @@ a{
 }
 .about__descripion{
     position: relative;
-    text-align: justify;
     padding: 2rem;
 }
 .about__descripion::before{
