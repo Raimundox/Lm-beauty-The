@@ -568,7 +568,7 @@ a{
 }
 .footer__data-social .social__icon{
     color: var(--first-color);
-    font-size: var(--h2-font-size);
+    font-size: calc( var(--h2-font-size) + 6px);
 }
 .footer__data-social .social__icon:hover{
     border-bottom: 1px solid var(--first-color);
