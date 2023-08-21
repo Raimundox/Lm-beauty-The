@@ -540,7 +540,7 @@ a{
     text-align: center;
 }
 
-@media (max-width: 375px){
+@media (max-width: 460px){
     .testimonials__name{
         text-align: right;
     }
