@@ -562,6 +562,7 @@ a{
 /* FOOTER */
 .footer__list{
     grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid var(--first-color);
