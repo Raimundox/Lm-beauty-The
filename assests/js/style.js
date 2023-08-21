@@ -43,7 +43,7 @@ window.addEventListener('scroll', scrollHeader)
 
 
 function sendMessage(service) {
-    var message = encodeURIComponent("Olá! Estou interessado em um serviço de " + service + ". Poderia me fornecer mais informações?");
+    var message = encodeURIComponent("Olá! Tenho interesse no serviço de " + service + ". Poderia me fornecer mais informações?");
     var phoneNumber = "86994555516";  // Substitua pelo número de telefone desejado
     var whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message;
     window.location.href = whatsappLink;
